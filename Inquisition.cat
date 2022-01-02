@@ -1,48 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0594-e1e9-64d5-a683" name="Inquisition" revision="4" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze @Mont_Fox Dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="43" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0594-e1e9-64d5-a683" name="Inquisition" revision="4" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze @Mont_Fox Dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="ffc39854--pubN65585" name="BFG Ships of Mars"/>
   </publications>
   <forceEntries>
-    <forceEntry id="278c-51b5-3260-c524" name="Emperor&apos;s Inquisition Fleet List" publicationId="5766-7751-d146-0800" page="51" hidden="false">
+    <forceEntry id="69de-3034-d614-12a8" name="Inquisitorial Fleet Detachment" hidden="false"/>
+    <forceEntry id="9162-e3ca-15b1-3eb6" name="Ordo Malleus Banisher Fleet List" hidden="false">
       <categoryLinks>
-        <categoryLink id="e9c1-ace5-a67e-c269" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
-        <categoryLink id="3768-a666-1871-3637" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
-        <categoryLink id="2d5c-77f4-14d4-ddb4" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
-        <categoryLink id="02f9-9d96-53c3-eab9" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
-        <categoryLink id="c0c7-db0f-338b-c684" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
+        <categoryLink id="4c64-05b2-ac3d-3e07" name="Battleship" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false">
           <modifiers>
-            <modifier type="increment" field="e4cd-dc0f-94e1-532e" value="3.0">
-              <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" repeats="1" roundUp="false"/>
-              </repeats>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="46e2-c9eb-27e7-172a" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" type="instanceOf"/>
-                    <condition field="selections" scope="4361706974616c20536869707323232344415441232323" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="e4cd-dc0f-94e1-532e" value="2.0">
-              <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" repeats="1" roundUp="false"/>
-              </repeats>
+            <modifier type="set" field="a95a-334f-ea63-bba2" value="0.0">
               <conditions>
-                <condition field="selections" scope="cf79-82ee-ebe9-7ea3" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="instanceOf"/>
+                <condition field="points" scope="force" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4cd-dc0f-94e1-532e" type="min"/>
-            <constraint field="selections" scope="parent" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3669-f25b-6954-07b0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a95a-334f-ea63-bba2" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="e607-8393-2a80-9b20" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
-        <categoryLink id="800b-b475-1169-20be" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
-        <categoryLink id="1c52-52f6-31ff-428b" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+        <categoryLink id="70bf-8e95-dc9f-36e6" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc5d-6043-c107-ec95" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="5e21-f92b-c58f-3227" name="Escort" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -563,69 +545,13 @@ used for any ship in the fleet.</characteristic>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
-    <entryLink id="c2c4-bd43-3b8b-74ad" name="Sword Frigate" hidden="false" collective="false" import="true" targetId="1f7c-8c41-a7e8-40ad" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="278c-51b5-3260-c524" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink id="16fe-e76a-bbaf-28f8" name="Nova Frigate" hidden="false" collective="false" import="true" targetId="fea6-6864-64f7-bd50" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="278c-51b5-3260-c524" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink id="f04a-a8a6-3b06-e00f" name="Hunter Destroyer" hidden="false" collective="false" import="true" targetId="8632-2465-51e5-b7af" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="278c-51b5-3260-c524" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink id="a3ca-5e07-1760-f5d9" name="Gladius Frigate" hidden="false" collective="false" import="true" targetId="7fba-98fc-ee7f-8daf" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="278c-51b5-3260-c524" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink id="77d0-db22-0455-a440" name="Firestorm Frigate" hidden="false" collective="false" import="true" targetId="29f2-2dc1-eff2-3101" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="278c-51b5-3260-c524" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink id="a275-2b3a-e1b3-0b12" name="Cobra Destroyer" hidden="false" collective="false" import="true" targetId="042b-3669-8215-bf20" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="278c-51b5-3260-c524" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink id="711f-2fe2-58f8-acdd" name="Falchion Frigate" hidden="false" collective="false" import="true" targetId="7095-447c-65a6-0032" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="278c-51b5-3260-c524" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
+    <entryLink id="c2c4-bd43-3b8b-74ad" name="Sword Frigate" hidden="false" collective="false" import="true" targetId="1f7c-8c41-a7e8-40ad" type="selectionEntry"/>
+    <entryLink id="16fe-e76a-bbaf-28f8" name="Nova Frigate" hidden="false" collective="false" import="true" targetId="fea6-6864-64f7-bd50" type="selectionEntry"/>
+    <entryLink id="f04a-a8a6-3b06-e00f" name="Hunter Destroyer" hidden="false" collective="false" import="true" targetId="8632-2465-51e5-b7af" type="selectionEntry"/>
+    <entryLink id="a3ca-5e07-1760-f5d9" name="Gladius Frigate" hidden="false" collective="false" import="true" targetId="7fba-98fc-ee7f-8daf" type="selectionEntry"/>
+    <entryLink id="77d0-db22-0455-a440" name="Firestorm Frigate" hidden="false" collective="false" import="true" targetId="29f2-2dc1-eff2-3101" type="selectionEntry"/>
+    <entryLink id="a275-2b3a-e1b3-0b12" name="Cobra Destroyer" hidden="false" collective="false" import="true" targetId="042b-3669-8215-bf20" type="selectionEntry"/>
+    <entryLink id="711f-2fe2-58f8-acdd" name="Falchion Frigate" hidden="false" collective="false" import="true" targetId="7095-447c-65a6-0032" type="selectionEntry"/>
   </entryLinks>
   <rules>
     <rule id="Mechanicus Fleet Rules###DATA###" name="Mechanicus Fleet Rules" page="0" hidden="false">
