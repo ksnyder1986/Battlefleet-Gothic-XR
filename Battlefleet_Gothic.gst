@@ -105,8 +105,11 @@ The additional ships compendium cites it&apos;s sources so site those instead of
         <infoLink id="44cc-a911-6cff-b47a" name="*DAMAGE" hidden="false" targetId="b75c-180f-abe0-73bd" type="profile"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="8493-6c6a-cf69-3aab" name="LC" hidden="false">
+    <categoryEntry id="8493-6c6a-cf69-3aab" name="Light Cruiser" hidden="false">
       <comment>Light Cruiser</comment>
+      <infoLinks>
+        <infoLink id="62a5-8f4a-f300-e8a0" name="*DAMAGE" hidden="false" targetId="b75c-180f-abe0-73bd" type="profile"/>
+      </infoLinks>
     </categoryEntry>
   </categoryEntries>
   <forceEntries>
@@ -2875,11 +2878,10 @@ Any Daemon ship may have a single Mark of Chaos with the same effects and cost i
         <categoryLink id="fe42-bedd-804f-e3f4" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="e56b-4aea-bc8f-93ee" name="Fury Fighters, Starhawk Bombers &amp; Shark Assault Craft" page="" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="e56b-4aea-bc8f-93ee" name="Fury Fighters &amp; Starhawk Bombers" page="" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="3f88-24cc-209c-667c" name="Fighters" hidden="false" targetId="2851-5e71-284b-f953" type="rule"/>
             <infoLink id="96f2-2b0d-3c17-ea55" name="Bombers" hidden="false" targetId="84e9-b24b-cad4-00c0" type="rule"/>
-            <infoLink id="2194-fa91-30c4-15b2" name="Assault Boats" hidden="false" targetId="187e-bb8f-bd53-e0eb" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="45d1-ddeb-83b4-6832" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
@@ -3018,14 +3020,14 @@ no default</comment>
     <rule id="84e9-b24b-cad4-00c0" name="Bombers" publicationId="11f0-17d1-e4d2-1018" page="30" hidden="false">
       <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
 
-Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
+Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play.
 
-Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
+Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack has been made. Ships massing turrets with the one under attack do not affect this number.</description>
     </rule>
     <rule id="2851-5e71-284b-f953" name="Fighters" publicationId="11f0-17d1-e4d2-1018" page="29" hidden="false">
       <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
 
-Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
+Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base contact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
     </rule>
     <rule id="8103-25d2-5412-2542" name="Torpedoes" publicationId="11f0-17d1-e4d2-1018" page="28" hidden="false">
       <description>If the torpedo marker contacts a ship&apos;s base (friend or foe) it attacks. Roll a D6 for every point of Strenght in the torpedo salvo. Each dice which equals or beats the ship&apos;s Armour value scores one point of damage. Torpedos will pass through shields before they impact, so ignore any shields when applying damage. The torpedo salvo continues moving after the attack but its Strength is reduced by 1 for every hit inflicted. Replace the marker with a smaller one as necessary. Torpedoes that can re-roll misses must do so, even if the target is already destroyed.
@@ -3037,6 +3039,76 @@ An entire salvo of torpedoes can be triggered prematurely by the following circu
 *If it hits another Torpedo marker.
 
 If a torpedo Marker is prematurely detonated it is removed from play.</description>
+    </rule>
+    <rule id="f942-06bb-74a2-4c11" name="Torpedo Bombers" publicationId="11f0-17d1-e4d2-1018" page="30" hidden="false">
+      <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
+
+Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play.
+
+Attack Vs Ships: Torpedo Bombers do not attack ships directly. Instead, at the start of any ordnance phase after the turn they are launched, a torpedo bomber squadron may be replaced by a strength-2 torpedo salvo (facing any direction). However, this salvo has limited fuel and must be removed at the end of the phase in which it is fired. A wave of torpedo bombers can combine their salvos together just like a squadron of ships in base contact.</description>
+    </rule>
+    <rule id="d439-dcdc-1ff0-e67f" name="Boarding Torpedoes" hidden="false">
+      <description>Boarding torpedoes are designed to punch through the outer hull of an enemy vessel and plunge a squad of heavily armed troops inside to sabotage the target ship’s systems.
+
+These torpedoes are manned, so they can turn up to 45° before moving. In addition, they always ignore friendly ships and attack craft (unlike other torpedoes) and may ignore any drifting or burning hulks they encounter. Otherwise, they must attack the first enemy vessel they contact and are still destroyed if they contact another torpedo marker. 
+
+For each hit inflicted by a boarding torpedo, conduct a hit-and-run raid against the target ship immediately.</description>
+    </rule>
+    <rule id="6662-8437-a7a9-14c7" name="Short Burn Torpedoes" hidden="false">
+      <description>Short burn torpedoes have more powerful engines but a limited amount of fuel. They are considerably faster than ordinary torpedoes but will ‘burn out’ and lose engine power very quickly in comparison to ordinary torpedoes, which are designed to cruise
+at speed for longer periods. 
+
+Short burn torpedoes have an increased speed of 40cm. However, to represent the chance of them burning out, roll a D6 for each salvo of short burn torpedoes after they have moved and made any
+attacks – on a roll of 6 the torpedoes run out of fuel and are replaced with a blast marker. In all other respects they are treated as standard torpedoes.</description>
+    </rule>
+    <rule id="88ad-e35f-3fc2-7fa4" name="Barrage Bombs" hidden="false">
+      <description>Barrage bombs are specially configured to penetrate the atmosphere of a targeted planet and bombard surface targets. In comparison to ordinary anti-ship torpedoes, barrage bombs have a relatively diffuse blast radius, being designed to achieve maximum
+saturation of the target area. 
+
+In addition to being fired normally, barrage bombs can be launched even while a ship is in low orbit, where they will move like standard torpedoes (they are unaffected by gravity; see page 52).
+
+Each salvo of barrage bombs which strikes a planet during a planetary assault scenario earns +1 assault point if it is strength-6 or less, or +2 assault points if it is strength-7 or greater. Each hit from barrage bombs against an enemy ship inflicts one point of
+damage that does not ignore shields.</description>
+    </rule>
+    <rule id="3c0a-cd1d-680a-8621" name="Guided Torpedoes" hidden="false">
+      <description>Guided torpedoes are directed via laser telemetry from the ship which launched them, allowing them to be guided onto a specific target or enemy ship even amidst the confusion of battle. Although tight beam communication links are used to control the torpedoes from the parent ship, they are still vulnerable to enemy interference and jamming. 
+
+Guided torpedoes can make a turn of up to 45° before moving, but only if the ship which launched them first passes a leadership test. If the leadership test is failed, one enemy ship can attempt to interfere and provide the torpedo salvo false instructions by passing a leadership test itself. If the enemy ship is successful, that vessel’s owning player is allowed to turn the torpedoes instead! Each hit from guided torpedoes inflicts one damage point on the target as normal.</description>
+    </rule>
+    <rule id="94d0-1c3e-75f1-362b" name="Seeking Torpedoes" hidden="false">
+      <description>The art of building self-guided torpedoes is almost lost to the Imperium, but they are still manufactured in tiny numbers at the great Adeptus Mechanicus temples on Mars. Logic engines and matriculators aboard the torpedoes themselves enable them to
+identify the attack vector most likely to result in the salvo reaching a target. The disadvantage of seeking torpedoes (other than their rarity) is that the The art of building self-guided torpedoes is almost
+lost to the Imperium, but they are still manufactured in tiny numbers at the great Adeptus Mechanicus temples on Mars. Logic engines and matriculators aboard the torpedoes themselves enable them to identify the attack vector most likely to result in the salvo reaching a target. The disadvantage of seeking torpedoes (other than their rarity) is that the surveyors they use to detect enemy ships are easily blinded by blasts and debris, leading to premature
+detonation. Vessels armed with seeking torpedoes may only launch one salvo of them per game, due to their rarity and expense.
+
+Each subsequent ordnance phase after launching, a seeking torpedo salvo must turn up to 45° before it moves, such that it is pointing as close as possible towards the nearest enemy ship. If several ships are an equal distance away, it will turn to attack
+the largest. Furthermore, seeking torpedoes will ignore any friendly ships and attack craft that they encounter. However, seeking torpedoes that move through blast markers will detonate on a D6 roll of 5+ instead of only on a result of 6, as their on-board sensors are overwhelmed by the heat and debris. Each hit from seeking torpedoes inflicts one damage point on the target as normal.</description>
+    </rule>
+    <rule id="b433-6dc2-7e3d-1c32" name="Melta Torpedoes" hidden="false">
+      <description>The warheads on melta torpedoes are fitted with fusion detonators, which explode into enormous conflagrations of nuclear fire upon impact. The flames will burn through even the outer hull of the largest battleships, threatening to consume the entire vessel in a hellish inferno. Ships armed with melta torpedoes may only launch one salvo of them per game, due to their rarity and expense.
+
+Hits from melta torpedoes inflict no damage points, instead, each hit causes an automatic Fire critical hit (even on vessels whose critical hit tables do not normally have a ‘Fire’ result). If a ship which is carrying unused melta torpedoes suffers a critical hit to the location of its torpedo launcher, it suffers an extra D3 Fire critical hits as some of the torpedoes detonate!</description>
+    </rule>
+    <rule id="6671-a2a3-a0cf-9b58" name="Vortex Torpedoes" hidden="false">
+      <description>Vortex torpedoes carry warheads which implode to create a highly unstable and dangerous rift in warp space. The damage inflicted by even a single vortex torpedo is horrendous – whole sections of the ship and its crew are ripped asunder and sucked into the warp. However, constructing and transporting such weapons is  extraordinarily hazardous. As such, they are perhaps one of the rarest armaments in the entire galaxy. Vessels armed with vortex torpedoes may only launch one salvo of them per game, due to their rarity and expense.
+
+Each hit from vortex torpedoes causes one point of damage and automatically inflicts a critical hit. If a ship which is carrying unused vortex torpedoes suffers a critical hit to the location of its torpedo launcher, it suffers D3 points of additional damage and an automatic critical hit itself as some of the torpedoes detonate!</description>
+    </rule>
+    <rule id="d4e0-8720-3460-1dbf" name="Mines" hidden="false">
+      <description>Each mine launcher on a vessel may launch one mine per turn (the number of mine launchers a ship has is often called its mine launcher strength). Mines are represented by 20mm square markers, like attack craft, but may never be grouped into waves or salvos. Once launched, a mine activates and will continue to function until it is destroyed. Mines move exactly 10cm directly towards the nearest enemy vessel in every ordnance phase.
+If a mine contacts an enemy vessel it attacks it immediately, rolling 8D6 against the target’s Armor value to hit. Unlike other ordnance, damage from mines may be blocked by shields. If a ship with mine launchers suffers critical damage to the launchers’ location, it suffers an extra D3 damage as some mines explode!
+
+Mines follow all the regular rules for ordnance regarding moving through blast markers, shooting, and so forth. Except for fighters (which will remove mines just like any other ordnance), mines are not affected by, and do not affect, any other ordnance markers on the battlefield.</description>
+    </rule>
+    <rule id="c9a4-5168-5ebe-ca37" name="Thunderhawk Gunships" hidden="false">
+      <description>Thunderhawk gunships combine the abilities of assault boats and fighters, and move like any other attack craft, with a speed of 20cm. A Thunderhawk counter that is intercepted by enemy fighters or moves onto an enemy ordnance marker removes the enemy as fighters would. However as they are extremely resilient, roll a dice when this happens. On a score of 4+, do not remove the Thunderhawk marker (However, Thunderhawks can only remove one enemy marker in any given ordnance phase and stop moving as soon as they intercept an enemy. Also, if a Thunderhawk marker uses its save to remain in play and comes into contact with another ordnance marker in the same ordnance phase, it is removed normally.). Note that against Eldar fighters, which also have this ability, it is possible that you end up with neither marker being removed! If this happens, either marker is free to move away in their next turn, or they can stay in place and attempt to remove their enemy again.
+
+When a Thunderhawk marker moves into contact with an enemy ship’s base, they are treated exactly like assault boats (with the +1 bonus to their hit and run attack for being Space Marines). Using its 4+ save does not prevent it from attacking a ship if in base contact with one when stopped. Once a Thunderhawk marker has made its hit and run attack, it is removed from play.</description>
+    </rule>
+    <rule id="64fc-a584-78eb-2f12" name="Stormbird Gunships" hidden="false">
+      <description>Stormbird gunships combine the abilities of fighters, bombers and assault boats. They move like any other attack craft, with a speed of 20cm. A Stormbird counter that is intercepted by enemy fighters or moves onto an enemy ordnance marker removes the enemy as fighters would. However as they are extremely resilient, roll a dice when this happens. On a score of 4+, do not remove the Stormbirds  marker (However, Stormbirds can only remove one enemy marker in any given ordnance phase and stop moving as soon as they intercept an enemy. Also, if a Stormbird marker uses its save to remain in play and comes into contact with another ordnance marker in the same ordnance phase, it is removed normally.). Note that against Eldar fighters, which also have this ability, it is possible that you end up with neither marker being removed! If this happens, either marker is free to move away in their next turn, or they can stay in place and attempt to remove their enemy again.
+
+When a Stormbird marker moves into contact with an enemy ship’s base, they are treated exactly like assault boats (with the +1 bonus to their hit and run attack for being Space Marines). Using its 4+ save does not prevent it from attacking a ship if in base contact with one when stopped. Once a Thunderhawk marker has made its hit and run attack, it is removed from play.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
