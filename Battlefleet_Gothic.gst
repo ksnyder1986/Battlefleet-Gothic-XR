@@ -111,6 +111,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
         <infoLink id="62a5-8f4a-f300-e8a0" name="*DAMAGE" hidden="false" targetId="b75c-180f-abe0-73bd" type="profile"/>
       </infoLinks>
     </categoryEntry>
+    <categoryEntry id="5a3a-a876-a59e-a4e1" name="Capital Ship" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="7529-da04-0225-31de" name="Unbound" publicationId="137d-dbad-5653-19f2" hidden="false">

@@ -1,320 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e0996cee-ffd0-44a1-bf94-1cc48fd3febb" name="Dark Eldar Pirate Fleet List" revision="12" battleScribeVersion="2.03" authorName="BSData" authorContact=" @mont_fox dndtonight.com @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="43" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e0996cee-ffd0-44a1-bf94-1cc48fd3febb" name="Dark Eldar Pirate Fleet List" revision="12" battleScribeVersion="2.03" authorName="BSData" authorContact=" @mont_fox dndtonight.com @BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="e0996cee--pubN65865" name="BFG Rulebook - Armada"/>
   </publications>
   <forceEntries>
-    <forceEntry id="ba70-dcab-8fd1-f2b8" name="Dark Eldar Pirate Fleet List" publicationId="1bc8-5968-21c3-0f27" page="56" hidden="false">
+    <forceEntry id="ba70-dcab-8fd1-f2b8" name="Dark Eldar Raiders Fleet List" publicationId="1bc8-5968-21c3-0f27" page="56" hidden="false">
       <categoryLinks>
-        <categoryLink id="02ca-51a1-be6f-da1c" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
-        <categoryLink id="9ce0-4567-7988-c00a" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
-        <categoryLink id="0e7f-fb5e-2901-20ce" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
+        <categoryLink id="02ca-51a1-be6f-da1c" name="Heavy Cruiser" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
+        <categoryLink id="9ce0-4567-7988-c00a" name="Battleship" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
+        <categoryLink id="0e7f-fb5e-2901-20ce" name="Escort" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
         <categoryLink id="39b0-bc87-162c-9e64" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
-        <categoryLink id="0f9d-3cec-6600-fb8c" name="Grand Cruisers" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
-        <categoryLink id="1b47-e153-86cf-94d2" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
-        <categoryLink id="c14c-be74-a5be-4936" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
-        <categoryLink id="d15d-0430-6ee9-0216" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
+        <categoryLink id="0f9d-3cec-6600-fb8c" name="Grand Cruiser" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false">
           <modifiers>
-            <modifier type="increment" field="ef59-bb2a-7991-7b58" value="3.0">
+            <modifier type="increment" field="12e7-dbd7-acbf-9372" value="1.0">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1042-e458-4e02-a537" repeats="1" roundUp="false"/>
               </repeats>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="46e2-c9eb-27e7-172a" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" type="instanceOf"/>
-                    <condition field="selections" scope="4361706974616c20536869707323232344415441232323" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="ef59-bb2a-7991-7b58" value="2.0">
-              <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" repeats="1" roundUp="false"/>
-              </repeats>
-              <conditions>
-                <condition field="selections" scope="cf79-82ee-ebe9-7ea3" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="instanceOf"/>
-              </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef59-bb2a-7991-7b58" type="min"/>
-            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fa1-270b-7398-93a4" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12e7-dbd7-acbf-9372" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="1b47-e153-86cf-94d2" name="Orbital Defences" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
+        <categoryLink id="c14c-be74-a5be-4936" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
+        <categoryLink id="d15d-0430-6ee9-0216" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry id="8c9bde99-eedf-4503-84af-ff75ae33b222" name="Dread Archon" page="0" hidden="true" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="forces" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="ba70-dcab-8fd1-f2b8" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="e63a-d405-3774-2638" name="Dread Archon" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
-          <characteristics>
-            <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">+2 (to a max of 10)</characteristic>
-            <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="56c3-3f26-420a-cd01" name="Dread Archon" hidden="false">
-          <description>You may include 1 Dread Archon in your fleet, who must be assigned to a ship and adds +2 to its Leadership, to a maximum of 10. If the fleet is worth over 750 points, a Dread Archon must be included to lead it.</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="8c9bde99-eedf-4503-84af-ff75ae33b222-466c65657420436f6d6d616e6465727323232344415441232323" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="3d881d86-4334-43b9-97ba-f7a2809bfd7b" name="Fleet Commander Re-rolls" hidden="false" collective="false" import="true" defaultSelectionEntryId="bb532834-4016-4588-bdcf-0c007625e4d9">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="bb532834-4016-4588-bdcf-0c007625e4d9" name="2 Extra Re-rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="50.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e5fcc617-e09a-4ea3-b058-7f2bde4e49c2" name="1 Extra Re-roll" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="25.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="78f31ff4-6476-4819-b9d9-2cae392912b0" name="3 Extra Re-rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="100.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="100.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="0318-9e79-f69d-0912" name="Dark Eldar Torture Class Cruiser" publicationId="e0996cee--pubN65865" page="56" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="forces" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="ba70-dcab-8fd1-f2b8" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="primary-catalogue" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89f0-691d-7523-f215" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="acf8-df63-ef72-a10b" name="Torture Class Cruiser Profile" publicationId="1bc8-5968-21c3-0f27" page="56" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
-            <characteristic name="Speed" typeId="537065656423232344415441232323">35cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">Shadowfield</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="8591-5661-ad9e-eefa" name="Torture Class Cruiser Prow Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">12</characteristic>
-            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="4229-c3d7-3ea4-1602" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="c015-2232-9aa8-0484" name="Mimic Engines" hidden="false" collective="false" import="true" type="upgrade">
-          <comment>Reduced in 2010 FAQ from 40 to 20 pts</comment>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be82-41c4-09e6-b129" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="a210-6c7d-8f46-f5eb" name="Mimic Engines" hidden="false">
-              <description>A Dark Eldar ship equipped with mimic engines approaches closer to the enemy before the threat is realised and so may make one normal move immediately after deployment, but before either side has taken a turn.
-
-In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy at the start of the game (after making its extra move) it may NOT be targeted by enemy ships at all during the first turn of the game, until it itself has attacked another vessel. In the second and subsequent turns it is assumed that the exchange of information between vessels in the opposing fleet will uncover the impostors, meaning the Dark Eldar can be targeted normally.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="e578-c839-e7a4-e5d2" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f753-9a88-e13b-cab1" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="0b0b-186f-9788-8660" name="Prow Torpedo Tubes" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="2318-cfb6-0b47-c83a" name="Prow Torpedo Tubes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="b736-dd97-d7ed-52ed" name="Eldar Torpedos" hidden="false" targetId="b1cf-3c3e-2f72-a429" type="rule"/>
-                <infoLink id="33a5-459a-7585-e315" name="Leech torpedos" hidden="false" targetId="13e8-e2ec-7521-75d2" type="rule"/>
-                <infoLink id="7616-6e65-6718-2962" name="Dark Eldar Torpedo Tubes" hidden="false" targetId="52e5-69ff-0f55-1b73" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="0818-a0b2-d980-5be4" name="Prow Phantom Lance" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="26c2-e322-fc14-0a75" name="Prow Phantom Lance" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="58df-f334-2f59-769f" name="Impaler" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="07d1-ea41-a91c-87d9" name="Impaler" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Attack Craft: 30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="f809-411f-cdaa-f5c8" name="Impaler" hidden="false">
-                  <description>Impalers, although a form of ordnance are not counted alongside other ordnance for purposes of launch limits, running out of ordnance and so on. In these respects Impalers follow their own special rules.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="072f-4427-15b7-4b93" name="Impailer Assault Module" hidden="false" targetId="d432-677f-3f95-5f02" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c322-4b32-f4c2-74b3" name="Launch Bays" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="4e92-7c2b-02df-be8b" name="Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Fighters: 30cm Bombers: 20cm Boats: 30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 Squadrons</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="d283-2f47-e95d-1ecb" name="Dark Eldar Attack Craft" hidden="false" targetId="25d3-8c1e-3993-05e4" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="40.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="f6f1-3174-c757-65dd" name="Second Impailer" hidden="false" collective="false" import="true">
-          <comment>option added in 2010 FAQ for 20 pts</comment>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="024b-c214-365d-9143" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="7427-01b4-501c-ee40" name="Impaler" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="c412-eca8-3e42-00cf" name="Impaler" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Attack Craft: 30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
-                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="81ec-39a2-8237-d883" name="Impaler" hidden="false">
-                  <description>Impalers, although a form of ordnance are not counted alongside other ordnance for purposes of launch limits, running out of ordnance and so on. In these respects Impalers follow their own special rules.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="8170-730b-8389-9553" name="Impailer Assault Module" hidden="false" targetId="d432-677f-3f95-5f02" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="bc5c-e8d1-73e8-ff28" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="210.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="0a80-fcd2-0e63-7be3" name="Escort Squadron" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="forces" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="ba70-dcab-8fd1-f2b8" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0915-ad4d-16e7-e0e7" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16a1-bd76-e3da-fded" type="min"/>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16a1-bd76-e3da-fded" type="min"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="20a6-8a61-01f8-9918" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="1b0c-a449-e128-d6aa" name="Dark Eldar Corsair Class Escort" hidden="false" collective="false" import="true" targetId="3492-1236-f700-f36a" type="selectionEntry"/>
+        <entryLink id="1b0c-a449-e128-d6aa" name="Dark Eldar Corsair Class Frigate" hidden="false" collective="false" import="true" targetId="3492-1236-f700-f36a" type="selectionEntry"/>
         <entryLink id="af14-12f0-f2b5-211a" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="2907-16bb-0e28-f2ad" name="Dark Eldar Subjugation Class Raider" hidden="false" collective="false" import="true" targetId="e59d-4add-a305-8fe8" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -322,23 +48,15 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
-    <entryLink id="1123-73c8-53ee-3674" name="Dark Eldar Corsair Class Escort" hidden="true" collective="false" import="true" targetId="3492-1236-f700-f36a" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="forces" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="ba70-dcab-8fd1-f2b8" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <entryLinks>
-        <entryLink id="2700-d5c4-7061-dd2a" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
+    <entryLink id="bb31-83d8-2088-d22f" name="Dark Eldar Succubus Class Light Cruiser" hidden="false" collective="false" import="true" targetId="d206-ccbc-e69e-83d9" type="selectionEntry"/>
+    <entryLink id="9e61-a42d-027f-563b" name="Dark Eldar Mortalis Class Grand Cruiser" hidden="false" collective="false" import="true" targetId="6832-c1c1-5844-0c91" type="selectionEntry"/>
+    <entryLink id="e2a8-ddfd-7a11-25fb" name="Dread Archon" hidden="false" collective="false" import="true" targetId="1976-73ab-8dab-95a4" type="selectionEntry"/>
+    <entryLink id="5cb2-a509-93c7-b6ac" name="Dracons" hidden="false" collective="false" import="true" targetId="11ea-9f38-ae78-90b7" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0d70-077f-3b18-bc56" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
+      </categoryLinks>
     </entryLink>
+    <entryLink id="996b-c8be-ed1d-6d2e" name="Dark Eldar Torture Class Cruiser" hidden="false" collective="false" import="true" targetId="0714-347c-32d0-9657" type="selectionEntry"/>
   </entryLinks>
   <rules>
     <rule id="f641-c393-2ef5-82b2" name="Dark Eldar Movement" publicationId="1bc8-5968-21c3-0f27" page="53" hidden="false">
@@ -373,20 +91,20 @@ https://tinyurl.com/DECritical</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
-    <selectionEntry id="3492-1236-f700-f36a" name="Dark Eldar Corsair Class Escort" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="3492-1236-f700-f36a" name="Dark Eldar Corsair Class Frigate" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="e18f-914b-4242-da47" name="Corsair Class Escort Profile" publicationId="1bc8-5968-21c3-0f27" page="57" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="e18f-914b-4242-da47" name="Corsair Class Frigate Profile" publicationId="1bc8-5968-21c3-0f27" page="57" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
-            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">2</characteristic>
             <characteristic name="Speed" typeId="537065656423232344415441232323">40cm</characteristic>
             <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">Shadowfield</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1/Shadowfield</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
             <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
           </characteristics>
         </profile>
-        <profile id="72fa-b79f-70d9-88ec" name="Corsair Class Escort Prow Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+        <profile id="72fa-b79f-70d9-88ec" name="Corsair Prow Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
@@ -394,31 +112,17 @@ https://tinyurl.com/DECritical</description>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="1576-bbf4-801a-5a01" name="Mimic Engines" hidden="false" targetId="daf3-b75d-afe5-17c1" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="ddc2-8983-a0e4-deca" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="4d2f-6dfc-126b-f80d" name="Mimic Engines" hidden="false" collective="false" import="true" type="upgrade">
-          <comment>cost reduction for mimic from 20 to 5 per 2010 FAQ</comment>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2a5-e075-4c8a-60e7" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="6cc4-03ab-0a86-e7bd" name="Mimic Engines" hidden="false">
-              <description>A Dark Eldar ship equipped with mimic engines approaches closer to the enemy before the threat is realised and so may make one normal move immediately after deployment, but before either side has taken a turn.
-
-In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy at the start of the game (after making its extra move) it may NOT be targeted by enemy ships at all during the first turn of the game, until it itself has attacked another vessel. In the second and subsequent turns it is assumed that the exchange of information between vessels in the opposing fleet will uncover the impostors, meaning the Dark Eldar can be targeted normally.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="3c96-8a4f-b16a-23c8" name="Upgrades" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3782-eec6-509e-cc17" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="982b-5680-006b-603c" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="285a-3ecf-5992-60e0" name="Prow Torpedo Tubes" hidden="false" collective="false" import="true" type="upgrade">
@@ -432,9 +136,9 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="6537-b877-608c-405a" name="Eldar Torpedos" hidden="false" targetId="b1cf-3c3e-2f72-a429" type="rule"/>
+                <infoLink id="6537-b877-608c-405a" name="Plasma Torpedoes" hidden="false" targetId="63df-f792-e069-f039" type="rule"/>
                 <infoLink id="2ce3-bd08-9e8d-3a9b" name="Leech torpedos" hidden="false" targetId="13e8-e2ec-7521-75d2" type="rule"/>
-                <infoLink id="3d23-1cf9-2ebe-55c3" name="Dark Eldar Torpedo Tubes" hidden="false" targetId="52e5-69ff-0f55-1b73" type="profile"/>
+                <infoLink id="18af-3e86-67b0-037a" name="Boarding Torpedoes" hidden="false" targetId="d439-dcdc-1ff0-e67f" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -450,31 +154,26 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="d790-fc62-c852-bc72" name="Phantom Lances" hidden="false" targetId="36ce-6372-bccb-b009" type="rule"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="de89-db68-6d95-1648" name="Impaler" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="3906-59ad-1fdd-45f9" name="Impaler" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile id="4228-f0bb-96a5-220e" name="Impaler" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Attack Craft: 30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">Special</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Impaler: 30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1 Module</characteristic>
                     <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <rules>
-                <rule id="9aae-1366-3fad-c99b" name="Impaler" hidden="false">
-                  <description>Impalers, although a form of ordnance are not counted alongside other ordnance for purposes of launch limits, running out of ordnance and so on. In these respects Impalers follow their own special rules.</description>
-                </rule>
-              </rules>
               <infoLinks>
                 <infoLink id="b4a3-5b9b-26d0-2736" name="Impailer Assault Module" hidden="false" targetId="d432-677f-3f95-5f02" type="rule"/>
               </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="20.0"/>
-              </costs>
             </selectionEntry>
             <selectionEntry id="5029-a9c3-745d-1492" name="Prow Weapons Batteries" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -494,37 +193,701 @@ In addition, if a mimic engine-equipped vessel is more than 30cm from the enemy 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="points" value="50.0"/>
+        <cost name="pts" typeId="points" value="60.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0714-347c-32d0-9657" name="Dark Eldar Torture Class Cruiser" publicationId="e0996cee--pubN65865" page="56" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="forces" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="ba70-dcab-8fd1-f2b8" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="0952-145d-a527-e8d3" name="Torture Class Cruiser Profile" publicationId="1bc8-5968-21c3-0f27" page="56" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">35cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1/Shadowfield</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7c39-eece-db62-d5b1" name="Torture Prow Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">12</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7673-c488-90a1-0c8d" name="Mimic Engines" hidden="false" targetId="daf3-b75d-afe5-17c1" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="cd11-b4b3-f90c-09d1" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="8770-ecb1-2f44-cf0f" name="Voidraven Torpedo Bombers" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12c9-6c66-75c0-f444" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5318-d8f3-3a8c-58e3" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="f5f9-6290-672b-22df" name="Voidraven Torpedo Bombers" hidden="false" targetId="1663-841b-9c99-b17e" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="bfc4-d2aa-5ad3-3fa6" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4dc1-42b8-273a-19e4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b50-4724-03d5-1d32" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4971-7c3e-4029-ec6e" name="Prow Torpedo Tubes" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="190b-05d0-093b-88f6" name="Prow Torpedo Tubes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="b127-da39-b25d-747a" name="Plasma Torpedoes" hidden="false" targetId="63df-f792-e069-f039" type="rule"/>
+                <infoLink id="3326-3206-a7e0-f42d" name="Leech torpedos" hidden="false" targetId="13e8-e2ec-7521-75d2" type="rule"/>
+                <infoLink id="162c-7d3f-eddf-2897" name="Boarding Torpedoes" hidden="false" targetId="d439-dcdc-1ff0-e67f" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="c38a-67a4-ddf2-c929" name="Prow Phantom Lance" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="56bb-4da3-ae76-b738" name="Prow Phantom Lance" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="88a2-a726-e320-ef9d" name="Phantom Lances" hidden="false" targetId="36ce-6372-bccb-b009" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="9114-f6df-d5a5-19d9" name="Impaler" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="c53b-7401-1b16-d1f9" name="Impaler" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Impaler: 30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2 Modules</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="0330-ea1d-0ba2-2a59" name="Impailer Assault Module" hidden="false" targetId="d432-677f-3f95-5f02" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="12c9-6c66-75c0-f444" name="Launch Bays" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="5d54-4b76-ef32-b691" name="Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <modifiers>
+                    <modifier type="append" field="name" value=" Voidravens: 20cm">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8770-ecb1-2f44-cf0f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Fighters: 30cm Bombers: 20cm Boats: 30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 Squadrons</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="c1ca-d266-9e26-baf2" name="Raptor Fighters" hidden="false" targetId="958f-7b95-711d-4d07" type="rule"/>
+                <infoLink id="215b-d66f-4716-8ba9" name="Razorwing Bombers" hidden="false" targetId="361e-e69c-fea6-bb32" type="rule"/>
+                <infoLink id="bf82-3c5c-4865-af58" name="Slavebrinder Assault Boats" hidden="false" targetId="01ab-86f6-d17c-8de3" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6692-7666-d0e7-18ca" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="d6ad-7fb3-8245-68ec" name="Crew Upgrade" hidden="false" collective="false" import="true" targetId="ca7b-94ad-81ad-79a9" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="230.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1976-73ab-8dab-95a4" name="Dread Archon" page="0" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3100-afb2-f84a-696e" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fad-cfcb-97ea-44cc" type="min"/>
+      </constraints>
+      <profiles>
+        <profile id="2b79-a676-3f5f-481f" name="Dread Archon" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
+          <characteristics>
+            <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">+2 (to a max of 10)</characteristic>
+            <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">0</characteristic>
+            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="b677-227e-8faf-9f0d" name="Dread Archon" hidden="false">
+          <description>You may include 1 Dread Archon in your fleet, who must be assigned to a ship and adds +2 to its Leadership, to a maximum of 10.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="56dd-6a03-a9b0-0163" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="00f8-de71-dc84-ec27" name="Fleet Commander Re-rolls" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="92d6-77cf-7ce0-2494" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="57df-68f0-0320-9d18" name="2 Extra Re-rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1f9c-8073-0bd6-f0dd" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="50.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3248-2460-62e9-8d0c" name="1 Extra Re-roll" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6ec4-546d-bfbf-34fb" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="25.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f6eb-183e-b2ba-e45e" name="3 Extra Re-rolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0b5e-6d44-95fb-1bf9" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="100.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="80.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6832-c1c1-5844-0c91" name="Dark Eldar Mortalis Class Grand Cruiser" publicationId="e0996cee--pubN65865" page="56" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="23da-c7c2-3039-d76c" name="Mortalis Class Grand Cruiser Profile" publicationId="1bc8-5968-21c3-0f27" page="56" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">2/Shadowfield</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="af14-1292-671e-7903" name="Mortalis Prow Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">16</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5a0e-b3a3-2cb8-01b9" name="Mimic Engines" hidden="false" targetId="daf3-b75d-afe5-17c1" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="86e2-439a-70ff-0f27" name="Grand Cruiser" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="8a12-bd64-ca78-baee" name="Voidraven Torpedo Bombers" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e868-bb0c-52df-4073" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef03-f970-3b45-73ed" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="5af8-ef61-a019-4594" name="Voidraven Torpedo Bombers" hidden="false" targetId="1663-841b-9c99-b17e" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="39fa-e24d-6051-effd" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5069-e1ac-17ce-ee1f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e514-2210-7626-62ab" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="442c-d4c0-ed72-81d2" name="Prow Torpedo Tubes" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="57ff-8b8a-e007-3346" name="Prow Torpedo Tubes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="b128-e7a1-afc4-8ad0" name="Plasma Torpedoes" hidden="false" targetId="63df-f792-e069-f039" type="rule"/>
+                <infoLink id="3492-d9fe-ba06-9dfb" name="Leech torpedos" hidden="false" targetId="13e8-e2ec-7521-75d2" type="rule"/>
+                <infoLink id="ae90-0ab3-03f6-c994" name="Boarding Torpedoes" hidden="false" targetId="d439-dcdc-1ff0-e67f" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="9f4b-805f-5f9d-bf61" name="Prow Phantom Lance" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="2a94-4fbe-0945-8afe" name="Prow Phantom Lance" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="992b-1041-ec3a-871f" name="Phantom Lances" hidden="false" targetId="36ce-6372-bccb-b009" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="26ba-a62d-6c13-60fc" name="Impaler" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="70e1-1b09-70d2-3f4c" name="Impaler" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Impaler: 30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3 Modules</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="17e9-c6c4-5e8e-34c7" name="Impailer Assault Module" hidden="false" targetId="d432-677f-3f95-5f02" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="e868-bb0c-52df-4073" name="Launch Bays" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="52be-ba3a-24be-f7a0" name="Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <modifiers>
+                    <modifier type="append" field="name" value=" Voidravens: 20cm">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8a12-bd64-ca78-baee" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Raptors: 30cm Razorwings: 20cm Slavebringers: 30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 Squadrons</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="3442-3441-e732-3191" name="Razorwing Bombers" hidden="false" targetId="361e-e69c-fea6-bb32" type="rule"/>
+                <infoLink id="02c6-29bd-ca85-c8e8" name="Slavebrinder Assault Boats" hidden="false" targetId="01ab-86f6-d17c-8de3" type="rule"/>
+                <infoLink id="3ed0-aae4-43c9-67e8" name="Raptor Fighters" hidden="false" targetId="958f-7b95-711d-4d07" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="5818-0fab-93be-79c3" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="31a0-f8af-8f0c-ff79" name="Crew Upgrade" hidden="false" collective="false" import="true" targetId="ca7b-94ad-81ad-79a9" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="300.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="11ea-9f38-ae78-90b7" name="Dracons" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d64-a8b6-6bb2-0983" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="954e-281a-483d-f968" name="Dracon" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
+          <characteristics>
+            <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">+1 (to a max of 10)</characteristic>
+            <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">0</characteristic>
+            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="8137-ac70-fabe-d632" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d206-ccbc-e69e-83d9" name="Dark Eldar Succubus Class Light Cruiser" publicationId="e0996cee--pubN65865" page="56" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="forces" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="ba70-dcab-8fd1-f2b8" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="94c0-3d98-8c24-ee52" name="Succubus Class Cruiser Profile" publicationId="1bc8-5968-21c3-0f27" page="56" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">4</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">40cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1/Shadowfield</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1bf0-89e6-4807-8147" name="Succubus Prow Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="304b-2a96-9dea-e7a5" name="Mimic Engines" hidden="false" targetId="daf3-b75d-afe5-17c1" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e521-d214-cf58-086e" name="Cruisers" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9edb-d6c2-1511-3855" name="Voidraven Torpedo Bombers" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e478-4af6-bf87-d850" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29a4-ce97-dfe8-92c2" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="d58f-61b9-abb7-414e" name="Voidraven Torpedo Bombers" hidden="false" targetId="1663-841b-9c99-b17e" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6057-1acd-ba68-7203" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c97-d6c4-ed57-7160" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a73f-2deb-1d61-f8b6" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ec84-6a8e-0ef3-f4ba" name="Prow Torpedo Tubes" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="c994-2977-0ce4-4737" name="Prow Torpedo Tubes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="3e75-c3c3-83fd-c9d0" name="Plasma Torpedoes" hidden="false" targetId="63df-f792-e069-f039" type="rule"/>
+                <infoLink id="97a4-f266-aeb2-db01" name="Leech torpedos" hidden="false" targetId="13e8-e2ec-7521-75d2" type="rule"/>
+                <infoLink id="dfe9-708f-96c0-4271" name="Boarding Torpedoes" hidden="false" targetId="d439-dcdc-1ff0-e67f" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="23fa-94f2-d554-4231" name="Prow Phantom Lance" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="ea46-2950-8c76-401a" name="Prow Phantom Lance" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="bc70-159f-e9e1-e165" name="Phantom Lances" hidden="false" targetId="36ce-6372-bccb-b009" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="b55a-86e5-0657-8ae3" name="Impaler" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="e122-fbf3-6164-8e77" name="Impaler" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Impaler: 30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2 Modules</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="7b58-6176-6249-7a90" name="Impailer Assault Module" hidden="false" targetId="d432-677f-3f95-5f02" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e478-4af6-bf87-d850" name="Launch Bays" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="6c36-22a1-d6fa-c9a0" name="Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <modifiers>
+                    <modifier type="append" field="name" value=" Voidravens: 20cm">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9edb-d6c2-1511-3855" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Fighters: 30cm Bombers: 20cm Boats: 30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2 Squadrons</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="e9d7-2cf4-fa3b-6bcb" name="Raptor Fighters" hidden="false" targetId="958f-7b95-711d-4d07" type="rule"/>
+                <infoLink id="1d4d-f460-e890-d262" name="Razorwing Bombers" hidden="false" targetId="361e-e69c-fea6-bb32" type="rule"/>
+                <infoLink id="476b-a8a5-f654-fdc7" name="Slavebrinder Assault Boats" hidden="false" targetId="01ab-86f6-d17c-8de3" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="19b2-dc1c-9c39-a668" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
+        <entryLink id="833d-6381-945b-7f06" name="Crew Upgrade" hidden="false" collective="false" import="true" targetId="ca7b-94ad-81ad-79a9" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="140.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e59d-4add-a305-8fe8" name="Dark Eldar Subjugation Class Raider" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="bb3a-53de-1425-cfdf" name="Subjagation Class Raider Profile" publicationId="1bc8-5968-21c3-0f27" page="57" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1/Shadowfield</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b933-08a8-c4ef-9fff" name="Subjegation Prow Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="adab-22d2-27d1-8801" name="Mimic Engines" hidden="false" targetId="daf3-b75d-afe5-17c1" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="eda9-5227-89e1-4f1f" name="New CategoryLink" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ec9f-a45e-3cd5-e49b" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6897-825d-6a8a-c097" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6c0-2cb4-4fe8-dce3" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="2523-f4e1-323d-2d04" name="Prow Torpedo Tubes" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="8496-9a41-46b8-4c62" name="Prow Torpedo Tubes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="6992-66d8-8fe3-b202" name="Plasma Torpedoes" hidden="false" targetId="63df-f792-e069-f039" type="rule"/>
+                <infoLink id="0640-438e-56d8-9e25" name="Leech torpedos" hidden="false" targetId="13e8-e2ec-7521-75d2" type="rule"/>
+                <infoLink id="bb26-bb3b-de36-b048" name="Boarding Torpedoes" hidden="false" targetId="d439-dcdc-1ff0-e67f" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="869c-53a6-36fc-1028" name="Prow Weapons Batteries" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="efde-0d92-1b71-500f" name="Prow Weapons Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="ca7b-94ad-81ad-79a9" name="Crew Upgrade" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46cb-5936-96af-0921" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="5b7b-1b8b-aba1-7020" name="Incubi" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="c588-2a98-7054-1a53" name="Incubi" hidden="false">
+              <description>Some particularly paranoid Archons will hire contingents of Incubi warriors as bodyguards. A vessel with Incubi has a +1 crew damage bonus when boarding and adds +1 to its hit-and-run results. In addition, when the ship or its ordnance conduct a hit-and-run raid, you may roll twice and choose the result to apply.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="474e-8779-a2da-a2a4" name="Wych Cult" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="1d13-2078-f213-7fcf" name="Wych Cult" hidden="false">
+              <description>Sometimes a Wych Cult will be hired to supplement the Archon’s crew. Any Dark Eldar vessel carrying a Wych Cult doubles its troop rating.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6758-03e6-5ef9-56c7" name="Haemonculi Coven" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="5996-cf76-30c2-181b" name="Haemonculi Coven" hidden="false">
+              <description>Groups of Haemonculi are a particularly useful aide to an Archon. When a Dark Eldar vessel with Haemonculi defends against a boarding action, the attacker must roll two dice and pick the lowest result. In addition, a vessel with Haemonculi gains +1 hit point, as the new crew has become accustomed to pain.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="d432-677f-3f95-5f02" name="Impailer Assault Module" publicationId="1bc8-5968-21c3-0f27" page="55" hidden="false">
-      <description>The Impaler is a specialised form of prow mounted attack craft, a little like an assault boat, but large enough to carry enough Dark Eldar assault troops to potentially overwhelm an entire ship. An Impaler is launched like an assault boat, and moves in the same way during the ordnance phase. Fighters which attack the Impaler do not automatically remove it from play,. Instead the Impaler rolls a D6 and remains in play on a 4+. The Impaler can only use this save once per ordnance phase, but if it does so against a fighter in base contact with a ship and subsequently survives turret fire, it may then attack that ship normally. Turrets may fire at the Impaler, in the same way as against ordnance, but require a 6 to hit. 
-When the Impaler successfully moves into contact with an enemy ship, it makes a Hit &amp; Run attack. Roll a D6 as normal. On a score of a 1 the Impaler’s boarders are defeated and the module may not be used for the remainder of
-the game. On a 2-6 the Impaler causes a critical hit. However, unlike assault boats, roll 2D6 and look up the score on the critical hits table (as opposed to just looking up the score of the Hit &amp; Run attack). 
-If the Impaler is removed (either by turrets, enemy ordnance, attack craft and so on), the Dark Eldar vessel must reload ordnance as normal before being able to fire it again (it is assumed that a damaged module limps back to its parent vessel and must await hurried repairs or else take time for its crew to transfer to a replacement). An Impaler can only be completely destroyed by a failed Hit &amp; Run attack, which would leave it useless due to the loss of its crew. 
-However, Impalers are far larger than most attack craft, and hence require substantial amounts of fuel. Because of this, their range is somewhat shorter than that of smaller attack craft. At the beginning of each of the Dark Eldar player’s turn he must remove any Impalers from the table (these are assumed to have been forced to return to their parent ship due to lack of fuel). He may of course attempt to  reload ordnance during the turn in order to relaunch said Impalers (i.e. he reloads ordnance as quickly as possible to ‘turn around’ the Impalers and their crew just as soon as they arrive back at their parent ship). 
-You may not launch additional Impalers if you already have a number of Impalers in play equal to the number of Impaler armed vessels in the fleet. Impalers are not deployed from launch bays in any way, shape or form, so the overall number of launch bays in a fleet does not affect the number of Impalers which you are permitted to launch or have in play.</description>
+      <description>The Impaler Assault Module is an extremely large assault boat used by the Dark ldar. Mounted on the prow of their vessels, the Impaler carries literally hundreds of assault troops ready to board an enemy ship. As a special attack craft, a Dark ldar player may not have more Impalers in play than the total Impaler launch capacity of his or her fleet, in the same way that other attack craft are limited by the fleet’s launch bays.
+
+The Impaler has a resilient save of 3+ due to its size and substantial defense systems. When it contacts an enemy vessel, roll a D6 just like a regular hit-and-run attack, applying any modifiers and/or special rules as necessary. However, do not look up the score on the Critical Hits table. Instead, if the score is 3+, the enemy ship suffers an automatic critical hit, the result of which may be re-rolled due to the maniacal frenzy of the Dark Eldar aboard the Impaler (however the second result stands, even if it is worse). Otherwise, it is assumed that the Impaler’s crew is beaten back and nothing happens; the survivors limp back to their parent vessel for repair and rearmament. In all other respects, an Impaler Module is treated like a normal assault boat.</description>
     </rule>
     <rule id="13e8-e2ec-7521-75d2" name="Leech torpedos" publicationId="1bc8-5968-21c3-0f27" page="55" hidden="false">
-      <description>Dark Eldar ships armed with torpedoes may use leech torpedoes at no extra cost. These must be loaded with a specific Reload Ordnance roll, although a ship may start the scenario with them in the tubes by writing a note on the ship sheet. Leech torpedoes cause no damage other than a single, automatic critical hit. Do not roll for the effect of this critical hit, instead the leech torpedo causes a -10cm speed reduction on its target. A leech torpedo hit also prevents the target from executing any All Ahead Full special orders. Only one -10cm speed penalty applies regardless of the number attached – the effect is not cumulative. However, all leech hits on a ship must be repaired before the movement penalty is removed (e.g. if a ship suffers 5 leech hits, it remains at a reduced speed until all 5 hits have been repaired).
-When not firing leeches, Dark Eldar ships equipped with torpedo tubes use the rules for Eldar torpedoes from the Battlefleet Gothic rulebook instead.
-</description>
-    </rule>
-    <rule id="b1cf-3c3e-2f72-a429" name="Eldar Torpedos" publicationId="11f0-17d1-e4d2-1018" page="130" hidden="false">
-      <description>Eldar Torpedos use sophisticated targeter scrambling systems to make themselves virtually undetectable until they strike. To represent this, defensive turrets only hit Eldar Torpedos on a roll of 6, rather than 4, 5, or 6, as is normally the case. In addition, the hightly accurate targeting sensors on Eldar Torpedos allow you to re-roll the dice to hit for any torpedo that misses a target on the first attempt. </description>
+      <description>All Dark Eldar torpedoes are protected by flickerfields, an advanced type of optical force-field which interferes with enemy targeting systems by making it appear that the shielded object “flickers” in and out of existence. As such, enemy turrets add +2 to their hit requirement when rolling to hit Dark Eldar ordnance, to a maximum of 6+.
+
+Leech torpedoes are a unique Dark Eldar creation designed to slow down targets of a raiding party. Leech torpedoes roll to hit against an enemy vessel’s armor just like standard torpedoes, however instead of causing any damage, each hit results in an automatic ‘Thrusters Damaged’ critical result (even for ships that do not have a ‘Thrusters Damaged’ result on their critical hit table). Do not apply any extra damage from this result.</description>
     </rule>
     <rule id="25d3-8c1e-3993-05e4" name="Dark Eldar Attack Craft" publicationId="1bc8-5968-21c3-0f27" page="55" hidden="false">
-      <description>Dark Eldar attack craft consist of Raptor fighters,Razorwing bombers and Slavebringer assault
-boats. Raptor fighters have a speed of 30cm and need a 4+ to remain in play after removing ordnance as with Eldar fighters. Razorwing bombers have a speed of 20cm and are hit by turrets only on a D6 roll of 6. Slavebringer assault boats have a speed of 30cm and are hit by turrets only on a D6 roll of 6.</description>
+      <description>Dark Eldar attack craft consist of Raptor fighters,Razorwing bombers and Slavebringer assault boats. Raptor fighters have a speed of 30cm and need a 4+ to remain in play after removing ordnance as with Eldar fighters. Razorwing bombers have a speed of 20cm and are hit by turrets only on a D6 roll of 6. Slavebringer assault boats have a speed of 30cm and are hit by turrets only on a D6 roll of 6.</description>
+    </rule>
+    <rule id="daf3-b75d-afe5-17c1" name="Mimic Engines" hidden="false">
+      <description>The mimic engine is an insidious invention that allows a Dark Eldar vessel to assume the appearance of another species’ ship, thus allowing the Dark Eldar to sneak up on their prey unseen. All Dark Eldar ships are equipped with a mimic engine at no extra cost.
+
+After deployment, but before either player has taken their first turn, each ship with a mimic engine may make one basic move. This does not allow a ship to make command checks or go on special orders before the first turn.
+
+In addition, until the end of the first turn, while a mimic engine-equipped ship remains more than 30cm from any enemy vessel, it cannot be targeted by enemy shooting. This includes launching torpedoes at the ship, unless the path of the marker would first contact a different enemy target within 30cm. Otherwise, all contact with ordnance is still resolved normally. 
+
+If a mimicking ship fires any weapons, defends itself with turrets, uses its own ordnance against an enemy ship or marker, or otherwise attacks in any way, it is immediately revealed. Revealed ships lose all benefits of their mimic engines and may be attacked normally. Against Necron and Tyranid fleets, mimic engines do not have any effect (before deployment or otherwise). The advanced sensory systems of their vessels cannot be fooled by such tricks!</description>
+    </rule>
+    <rule id="fb9f-0d30-4505-2f57" name="Shadow Fields" hidden="false">
+      <description>Shadowfields provide the following effects, even if all of the vessel’s shields are overloaded:
+
+Vs. Gunnery
+Against attacks which make use of the gunnery table, shadowfields force one additional right column-shift in addition to any other column shifts that apply.
+
+In addition, after a ship or squadron with shadowfields is hit by a gunnery weapon, place a ‘tracking’ mark on that unit (limit once per target per attacker). These last until the end of the turn, and are applied even if the hit was absorbed by shields or saved by bracing. (If you do not have specific tokens on hand, use dice or coins to indicate the number of tracking marks on each unit).
+
+Vs. Lances &amp; Ordnance
+Against hits (or hit-and-run raids) caused by lances and ordnance, shadowfields provide a 2+ save to represent the attacker being fooled by a false image of the vessel.
+
+However, for each tracking mark on the unit (see above), the save difficulty increases by 1, to a maximum of 6+, as ‘tracer’ fire makes it easier to pinpoint the ship’s location.
+
+Vs. Ramming
+Leadership tests to ram ships protected by shadowfields are taken on an extra +2D6, due to the difficulty of setting an accurate collision trajectory.
+
+Vs. Other Attacks
+Against boarding actions, teleport attacks, and weapons that require base contact, use a template, or affect an area, shadowfields offer no protection of any kind.</description>
+    </rule>
+    <rule id="1dee-7c67-7926-4c19" name="Dark Eldar Gunnery Weapons" hidden="false">
+      <description>Due to their enormous volume of fire, any Dark Eldar weapon that uses the gunnery table gains an automatic left column-shift at all times. This is in addition to any other column-shifts that would apply.</description>
+    </rule>
+    <rule id="36ce-6372-bccb-b009" name="Phantom Lances" hidden="false">
+      <description>A phantom lance functions exactly like a regular lance weapon, but scores one hit on a roll of 4, and two hits on a roll of 5+. For the purpose of saves and other defenses, count each hit separately.</description>
+    </rule>
+    <rule id="958f-7b95-711d-4d07" name="Raptor Fighters" hidden="false">
+      <description>All Dark Eldar attack craft are protected by flickerfields, an advanced type of optical force-field which interferes with enemy targeting systems by making it appear that the shielded object “flickers” in and out of existence. As such, enemy turrets add +2 to their hit requirement when rolling to hit Dark Eldar ordnance, to a maximum of 6+.
+
+Dark Eldar fighters are designed to operate far from their mothership, raiding planets even while their base remains at the edge of the system. As such, Raptor fighters have a 4+ resilient save. </description>
+    </rule>
+    <rule id="1663-841b-9c99-b17e" name="Voidraven Torpedo Bombers" hidden="false">
+      <description>All Dark Eldar attack craft are protected by flickerfields, an advanced type of optical force-field which interferes with enemy targeting systems by making it appear that the shielded object “flickers” in and out of existence. As such, enemy turrets add +2 to their hit requirement when rolling to hit Dark Eldar ordnance, to a maximum of 6+.
+
+Voidravens launch plasma torpedoes. Dark Eldar plasma torpedoes are designed to strip away hull and ignite the vulnerable corridors within their target. They are treated as standard torpedoes that must re-roll missed attacks.</description>
+    </rule>
+    <rule id="01ab-86f6-d17c-8de3" name="Slavebrinder Assault Boats" hidden="false">
+      <description>All Dark Eldar attack craft are protected by flickerfields, an advanced type of optical force-field which interferes with enemy targeting systems by making it appear that the shielded object “flickers” in and out of existence. As such, enemy turrets add +2 to their hit requirement when rolling to hit Dark Eldar ordnance, to a maximum of 6+.
+
+Dark Eldar are almost universally violent and sadistic. As such, all Dark Eldar vessels and ordnance add +1 to their result when conducting a hit-and-run raid.</description>
+    </rule>
+    <rule id="361e-e69c-fea6-bb32" name="Razorwing Bombers" hidden="false">
+      <description>All Dark Eldar attack craft are protected by flickerfields, an advanced type of optical force-field which interferes with enemy targeting systems by making it appear that the shielded object “flickers” in and out of existence. As such, enemy turrets add +2 to their hit requirement when rolling to hit Dark Eldar ordnance, to a maximum of 6+.</description>
+    </rule>
+    <rule id="63df-f792-e069-f039" name="Plasma Torpedoes" hidden="false">
+      <description>All Dark Eldar torpedoes are protected by flickerfields, an advanced type of optical force-field which interferes with enemy targeting systems by making it appear that the shielded object “flickers” in and out of existence. As such, enemy turrets add +2 to their hit requirement when rolling to hit Dark Eldar ordnance, to a maximum of 6+.
+
+Dark Eldar plasma torpedoes are designed to strip away hull and ignite the vulnerable corridors within their target. They are treated as standard torpedoes that must re-roll missed attacks.</description>
     </rule>
   </sharedRules>
-  <sharedProfiles>
-    <profile id="52e5-69ff-0f55-1b73" name="Dark Eldar Torpedo Tubes" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-      <characteristics>
-        <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Ships with torpedo tubes are armed with both Eldar torpedoes and Leech torpedoes, though the Leech torpedoes must be loaded with a separate reload ordnance roll as described in the special rules.</characteristic>
-      </characteristics>
-    </profile>
-  </sharedProfiles>
 </catalogue>
